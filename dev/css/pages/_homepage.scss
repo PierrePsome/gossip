@@ -1,0 +1,115 @@
+
+.grid-cont {
+    display: grid;
+    grid-template-areas:
+    "block none none"
+    "block bottom bottom"
+    ;
+    gap: 1rem;
+}
+
+// PREMIER BLOCK GRID
+.first-block {
+    margin-top: 50px;
+    .block {
+        grid-area: block;
+        border: solid 1px lightgray;
+        .img {
+            background: url(../../img/27-1068x713.jpg) center/cover;
+            width: 100%;
+            height: 400px;
+        }
+
+        .contxt {
+            padding: 10px;
+            display: inline-block;
+
+            .titre {
+                color: red;
+                font-weight: bold;
+                letter-spacing: .5px;
+                font-size: 12px;
+            }
+
+            .texte {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .none {
+        border: solid 1px lightgray;
+        .img {
+            background: url(../../img/18-1068x712.jpg) center/cover;
+            width: 100%;
+            height: 250px;
+        }
+
+        .contxt {
+            padding: 10px;
+
+            .titre {
+                color: red;
+                font-weight: bold;
+                letter-spacing: .5px;
+                font-size: 12px;
+            }
+
+            .texte {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .none2 {
+        border: solid 1px lightgray;
+        .img {
+            background: url(../../img/23-1068x712.jpg) center/cover;
+            width: 100%;
+            height: 250px;
+        }
+
+        .contxt {
+            padding: 10px;
+
+            .titre {
+                color: red;
+                font-weight: bold;
+                letter-spacing: .5px;
+                font-size: 12px;
+            }
+
+            .texte {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bot {
+        grid-area: bottom;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: solid 1px lightgray;
+        .img {
+            background: url(../../img/26-1068x712.jpg) center/cover;
+            width: 94%;
+            height: 250px;
+        }
+
+        .contxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .titre {
+                color: red;
+                font-weight: bold;
+                letter-spacing: .5px;
+                font-size: 12px;
+            }
+
+            .texte {
+                font-weight: bold;
+            }
+        }
+    }
+}

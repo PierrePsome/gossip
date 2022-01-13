@@ -1,0 +1,57 @@
+.grid-head {
+    display: grid;
+    grid-template-areas:
+    "block . . bot"
+    "block none none bot"
+    ;
+    height: 149px;
+    gap: 1rem;
+}
+
+.tete {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    span {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .gossip-logo {
+        grid-area: block;
+    }
+
+    .banner-head {
+        grid-area: none;
+        background: url(../../img/rec1.png) center/cover;
+        height: 90px;
+        width: 728px;
+    }
+
+    .blue-head {
+        grid-area: bot;
+        background: url(../../img/22-324x400.jpg) center/cover;
+        height: 100%;
+        width: 150px;
+        padding: 10px;
+        position: relative;
+
+        div {
+            position: absolute;
+            bottom: 0px;
+        }
+
+        p:nth-of-type(1) {
+            background-color: red;
+            display: inline-block;
+            padding: 5px;
+        }
+        p {
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
