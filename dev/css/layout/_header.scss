@@ -14,9 +14,19 @@
 }
 
 header {
+    .txtinput {
+        width: 728px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
     span {
         font-size: 12px;
         color: gray;
+        font-family: 'Montserrat', sans-serif;
+    }
+    span:nth-of-type(2) {
+        margin: 0px 10px 0px 10px;
     }
 
     .gossip-logo {

@@ -6,12 +6,17 @@ header {
         div {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
-            padding: 10px 0px 10px 0px;
-            a {
+            a { display: flex;
+                align-items: center;
+                justify-content: center;
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-                text-align: center;
+                height: 3em;
+            }
+            a:hover {
+                background-color: black;
+                color: white;
             }
         }
     }
