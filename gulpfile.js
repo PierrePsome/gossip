@@ -38,6 +38,7 @@ gulp.task('htmled', function () {
 gulp.task('jsed', function () {
     return gulp.src('dev/js/*.js')
     .pipe(uglify())
+    .pipe(rename("./main.min.js"))
     .pipe(gulp.dest('prod/js'))
 });
 
