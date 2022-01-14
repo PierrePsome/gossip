@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -86,19 +92,24 @@
         </section>
 
         <section class="trending wrapper">
-            <div class="banner">
-                <div class="left">
-                    <span>TRENDING</span>
-                    <p class="txt-banner">EXOTIC TRIPS ARE GETTING MORE AND MORE POPULAR IN SOUTH AMERICA</p>
+
+
+            <div class="banner swiper">
+                <span>TRENDING</span>
+                <div class="left swiper-wrapper">
+                    <p class="swiper-slide">EXOTIC TRIPS ARE GETTING MORE AND MORE POPULAR IN SOUTH AMERICA</p>
+                    <p class="swiper-slide">BALI TRAVEL EXPERIENCE: COMBINE LUXURY WITH A REAL LIFE ADVENTURE</p>
+                    <p class="swiper-slide">A BREAKTHOUGH FOR THIS YEAR: SPACE TRAVEL MIGHT BECOME A THING</p>
                 </div>
                 <div class="right">
-                    <div class="carre-banner left-arrow">&#60;</div>
-                    <div class="carre-banner right-arrow">&#62;</div>
+                    <div class="carre-banner swiper-button-prev">&#60;</div>
+                    <div class="carre-banner swiper-button-next">&#62;</div>
                 </div>
             </div>
         </section>
     </main>
     
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

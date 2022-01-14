@@ -115,6 +115,9 @@
         div {
             display: flex;
             .carre-banner {
+                position: relative;
+                left: -20px;
+                top: 10px;
                 margin-right: 10px;
                 height: 30px;
                 width: 30px;
@@ -122,6 +125,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
                 color: rgba(128, 128, 128, 0.555);
             }
             .carre-banner:hover {
@@ -129,6 +133,13 @@
                 background-color: red;
                 color: white;
 
+            }
+
+            .swiper-button-next:after{
+                display: none;
+            }
+            .swiper-button-prev:after{
+                display: none;
             }
         }
 
